@@ -1,0 +1,57 @@
+{
+  "name": "ButtonSimulator",
+  "tree": {
+    "$className": "DataModel",
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "DataManager": {
+        "$path": "src/server/DataManager.lua"
+      },
+      "PassiveIncomeHandler": {
+        "$path": "src/server/PassiveIncomeHandler.lua"
+      },
+      "ButtonPurchaseHandler": {
+        "$path": "src/server/ButtonPurchaseHandler.lua"
+      },
+      "RebirthHandler": {
+        "$path": "src/server/RebirthHandler.lua"
+      },
+      "BillboardHandler": {
+        "$path": "src/server/BillboardHandler.lua"
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "StatsGui": {
+          "$path": "src/client/StatsGui.lua"
+        },
+        "PinPanel": {
+          "$path": "src/client/PinPanel.lua"
+        },
+        "ButtonFeedback": {
+          "$path": "src/client/ButtonFeedback.lua"
+        }
+      }
+    },
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Shared": {
+        "$className": "Folder",
+        "ButtonConfig": {
+          "$path": "src/shared/ButtonConfig.lua"
+        },
+        "StatFormulas": {
+          "$path": "src/shared/StatFormulas.lua"
+        },
+        "NumberFormatter": {
+          "$path": "src/shared/NumberFormatter.lua"
+        },
+        "RemoteEvents": {
+          "$path": "src/shared/RemoteEvents.lua"
+        }
+      }
+    }
+  }
+}
